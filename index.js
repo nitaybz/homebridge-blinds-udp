@@ -76,11 +76,9 @@ BlindsUDPAccessory.prototype.setTargetPosition = function(pos, callback) {
     {
       if (this.interval != null) clearInterval(this.interval);
       if (this.timeout != null) clearTimeout(this.timeout);
-      this.udpRequest(this.host, this.port, this.stopURL, function() {
-          this.log("Already here")
-        }.bind(this));
-        callback(null);
-        return;
+      this.log("Already here");
+      callback(null);
+      return;
     }
     const moveUp = (this.currentTargetPosition >= this.lastPosition);
     this.log((moveUp ? "Moving up" : "Moving down"));
