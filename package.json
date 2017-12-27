@@ -1,6 +1,6 @@
 {
   "name": "homebridge-blinds-udp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "nitaybz",
   "description": "A Homebridge plugin to control blinds trough UDP packets - inspired by Homebridge-NooLite-HTTP-Blinds by JenRus",
   "license": "MIT",
